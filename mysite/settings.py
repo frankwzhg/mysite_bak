@@ -60,7 +60,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'test',
-        'HOST': 'frankub',
+        'HOST': 'frankr.jios.org',
         'USER': 'root',
         'PASSWORD': 'Dadi4747',
 
@@ -87,3 +87,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 DJANGO_SETTING_MODULE = 'mysite.settings'
+
+# add template_director
+TEMPLATE_DIRS = (
+    # # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+    # Always use forward slashes, even on Windows.
+    # Don't forget to use absolute paths, not relative paths.
+    '/home/frank/mysite/templates',
+
+)
