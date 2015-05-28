@@ -7,5 +7,11 @@
       <schema-pattern>information_schema.*</schema-pattern>
       <default-schemas>information_schema.*</default-schemas>
     </data-source>
+    <data-source name="Django default" uuid="24f1b644-93d4-4938-9983-e0c7767c6075">
+      <user-name>root</user-name>
+      <user-password>dfeedfcbdfcedfc3df9edf9ddf9edf9d</user-password>
+      <schema-pattern>test.*</schema-pattern>
+      <default-schemas>test.*</default-schemas>
+    </data-source>
   </component>
 </project>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="17123635">
+  <component name="DataSourceManagerImpl" format="xml" hash="1191304713">
     <data-source source="LOCAL" name="MySQL - @frankr.jios.org" uuid="e283aa3c-0204-4e7d-afe8-5f8b13def522">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
@@ -14,6 +14,27 @@
         <property name="yearIsDateType" value="false" />
       </driver-properties>
       <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Django default" uuid="24f1b644-93d4-4938-9983-e0c7767c6075">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://frankub/test</jdbc-url>
+      <driver-properties>
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/mysql-connector-license.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/mysql-connector-java-5.1.34-bin.jar</url>
+        </library>
+      </libraries>
     </data-source>
   </component>
 </project>
