@@ -57,12 +57,19 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
+# check client access database from where , internet or intranet
+import socket
+try:
+    socket.gethostbyname("frankub")
+    hostname = "frankub"
+except:
+    hostname = "frankr.jios.org"
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'test',
-        'HOST': 'frankub',
+        'HOST': hostname,
         'USER': 'root',
         'PASSWORD': 'Dadi4747',
 
@@ -91,10 +98,12 @@ STATIC_URL = '/static/'
 DJANGO_SETTING_MODULE = 'mysite.settings'
 
 # add template_director
+# set templates folder to shortcut path
 TEMPLATE_DIRS = (
     # # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/home/frank/mysite/templates',
+    #'/home/frank/mysite/templates',
+    'os.path.realpath("templates")',
 
 )

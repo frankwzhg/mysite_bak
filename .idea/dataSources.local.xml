@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="Django default" uuid="5159649c-24cb-4bfb-9eb5-cf0f5610386a">
-      <secret-storage>memory</secret-storage>
+    <data-source name="MySQL - @frankr.jios.org" uuid="e283aa3c-0204-4e7d-afe8-5f8b13def522">
+      <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
+      <schema-pattern>information_schema.*</schema-pattern>
+      <default-schemas>information_schema.*</default-schemas>
     </data-source>
   </component>
 </project>
